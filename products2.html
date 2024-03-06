@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/total.js" type="text/javascript"></script>
+      <script src="js/price.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    
+    
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <a href="products2.html" class="active">Records</a>
+    <a href="findus.html">Find Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+    <section class="container">
+        
+        
+        
+    <div class="card">
+        <div class="card-image trav-image"></div>
+        <h2> Rodeo - Travis Scott</h2>
+        <p>Travis Scott's first album, "Rodeo" (2015), mixes trap and psychedelic sounds with features from artists like Kanye West and The Weeknd. It explores themes of fame, drugs, and relationships.
+        </p>
+        <br>
+             <br>
+        <a id="item1price">100 &euro;</a>
+                <a>Quantity
+             <br>
+             <p><input type="number" style="width: 5em" id="item1quantity" min="0" oninput="updateTotal('item1')"></p>
+             
+             <p><label for="item1result" id="item1result">&euro;</label> </p>  
+             </a>
+    </div>
+        
+    <div class="card">
+        <div class="card-image abel-image"></div>
+        <h2> Starboy - The Weeknd</h2>
+        <p>The Weeknd's third album, "Starboy" (2016), blends pop, R&B, and electronic sounds with features from Daft Punk and Lana Del Rey. It explores themes of fame, relationships, and indulgence.
+        </p>
+        <br>
+             <br>
+        <a id="item2price">75 &euro;</a>
+                <a>Quantity
+             <br>
+             <p><input type="number" style="width: 5em" id="item2quantity" min="0" oninput="updateTotal('item2')"></p>
+             
+             <p><label for="item2result" id="item2result">&euro;</label> </p>  
+             </a>
+    </div>
+        
+        <div class="card">
+        <div class="card-image jpeg-image"></div>
+        <h2> Veteran - Jpegmafia </h2>
+        <p>JPEGMAFIA's third album, "Veteran" (2018), blends experimental hip-hop, noise, and punk with features from Freaky and Bobbi Rush. It explores political and social commentary, as well as JPEGMAFIA's personal experiences.
+        </p>
+        <br>
+             <br>
+        <a id="item3price">20 &euro;</a>
+                <a>Quantity
+             <br>
+             <p><input type="number" style="width: 5em" id="item3quantity" min="0" oninput="updateTotal('item3')"></p>
+             
+             <p><label for="item3result" id="item3result">&euro;</label> </p>  
+             </a>
+    </div>
+        
+      
+        
+        <div class="card">
+        <div class="card-image frank-image"></div>
+        <h2> Blonde - Frank Ocean</h2>
+        <p>Frank Ocean's second album, "Blonde" (2016), mixes R&B, pop, and electronic sounds with features from Beyoncé and André 3000. It explores themes of personal reflection, relationships, and identity.
+        </p>
+        <br>
+             <br>
+        <a id="item4price">500 &euro;</a>
+                <a>Quantity
+             <br>
+             <p><input type="number" style="width: 5em" id="item4quantity" min="0" oninput="updateTotal('item4')"></p>
+             
+             <p><label for="item4result" id="item4result">&euro;</label> </p>  
+             </a>
+    </div>
+        
+        
+        <div class="card">
+        <div class="card-image post-image"></div>
+        <h2> Stoney - Post Malone</h2>
+        <p>Post Malone's debut album, "Stoney" (2016), blends hip-hop, pop, and R&B with features from artists like Justin Bieber and Quavo. It explores themes of love, heartbreak, and partying.
+        </p>
+        <br>
+             <br>
+        <a id="item5price">30 &euro;</a>
+                <a>Quantity
+             <br>
+             <p><input type="number" style="width: 5em" id="item5quantity" min="0" oninput="updateTotal('item5')"></p>
+             
+             <p><label for="item5result" id="item5result">&euro;</label> </p>  
+             </a>
+    </div>
+        
+        
+     
+        
+        
+        
+  
+        
+    
+ 
+    </section>
+         <section class="footer">
+           <hr>
+             <br>
+            <div class="card2">
+                <br>
+                <a id="subtotal">&euro;</a>
+                <a onclick="showTotalWithShipping()">Check Price</a>
+                <a href="shipping.html" class="btn">Checkout</a>
+             <br>   
+    </div>
+        
+          
+        </section> 
+    
+    <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script>
+</body>
+          
+
+</html>
